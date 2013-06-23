@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /blog/wp-admin/
+Disallow: /~david/
+Sitemap: http://davidhogue.com/sitemapindex.xml.gz
+
