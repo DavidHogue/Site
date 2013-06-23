@@ -12,18 +12,16 @@
   <link rel="openid.delegate" href="http://davidhogue.myopenid.com/" />
   <link rel="openid2.provider" href="http://www.myopenid.com/server" />
   <link rel="openid2.local_id" href="http://davidhogue.myopenid.com/" />
+  <link href='http://fonts.googleapis.com/css?family=Bitter|Open+Sans' rel='stylesheet' type='text/css'>
   <link href="http://davidhogue.com/blog/wp-content/themes/davidhogue.com/style.css" media="all" type="text/css" rel="stylesheet" />
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <style>
-img { 
-	float: right;
-	margin-top: 10px;
-	margin-left: 10px;
+body {
+	margin-bottom: 50px;
 }
-.about {
-	border-bottom: 1px dotted black;
-	padding-bottom: 10px;
-	padding-top: 10px;
+.about img { 
+	float: right;
+	margin: 0 0 10px 10px;
 }
 h1 {
 	padding-top: 10px;
@@ -33,14 +31,16 @@ h1, h2, h3, h4 {
 }
 .bottomline {
 	clear: both;
-	border-top: 1px dotted black;
+	border-top: 1px dotted #880000;
 }
 #main {
 	padding-right: 0;
 }
+#masthead {
+	max-width: 809px;	
+}
 .about {
-	font-size: 16px;
-	padding-top: 0;
+	border-bottom: 1px dotted #880000;
 	padding-bottom: 35px;
 }
 .left {
@@ -52,34 +52,72 @@ h1, h2, h3, h4 {
 	float: left;
 	width: 394px;
 	padding: 10px 0 10px 10px;
-	border-left: 1px dotted black;
+	border-left: 1px dotted #880000;
 }
 p+p {
-	margin-top: 5px;
+	margin-top: 1.5em;
+}
+.fine-print {
+	font-size: 0.8em;
 }
   </style>
 </head>
 
 <body>
 <div id="wrapper">
+
+	<div id="header">
+		<div id="masthead">
+			<div id="branding">
+				<div id="site-title">
+					<span><a href="http://davidhogue.com/" title="David Hogue's Personal Site"><img src="http://davidhogue.com/blog/wp-content/themes/davidhogue.com/Logo.png" /></a></span>
+				</div>
+			</div>
+			<div id="access">
+				<div class="menu-header">
+					<ul id="menu-heaader-menu" class="menu">
+						<li class="menu-item">
+							<a href="http://davidhogue.com/blog/">Blog</a>
+						</li>
+						<li class="menu-item">
+							<a href="http://davidhogue.com/">About</a>
+						</li>
+						<li class="menu-item">
+							<a href="mailto:david@davidhogue.com">Contact</a>
+						</li>
+						<li class="menu-item">
+							<a href="http://feeds.davidhogue.com/DavidHogue"><img src="http://davidhogue.com/blog/wp-content/themes/davidhogue.com/feed-icon-14x14.png">Subscribe</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
 <div id="main">
-	<img src="/me/current_profile.jpg" alt="David Hogue" title="David Hogue" />
-	<h1>David Hogue's Personal Site</h1>
-	<div class="about">
-		<p>
-			Hi, my name's David.
-			I'm a software developer living in the Portland, Oregon area.
-			At work I build a CMS on ASP.NET using C#, SQL, JavaScript.
-			In my spare time I'm having fun blogging and lately experimenting with things such as Node.js and MongoDB.
-		</p>
 
-		<p>
-			Below are some links to some of my public work and social network profiles.
-		</p>
+	<h1 class="entry-title">David Hogue's Personal Site</h1>
+	<div class="about entry-content">
+		<img src="/me/current_profile.jpg" alt="David Hogue" title="David Hogue" />
+<p>
+Hi!  My name is David.  I live in Portland, Oregon.  
+I write software for a living. 
+</p>
 
-		<!--
-		<p>If you need to reach me, you can use this <a href="http://blog.vorpal.cc/contact/">contact form</a>.</p>
-		-->
+<p>
+I am interested in a variety of programming and tech related topics. Particularly in higher level concepts like design patterns, techniques and security. I like to write solid unit tested code. I keep code simple and refactor when it's worthwhile. I'm always looking out for new and better ways to do things and love to share what i find.
+</p>
+
+<p>
+I've been using a lot of C#, SQL and JavaScript at work, but I've used most of the major languages such as Java, C, Python, VB.net, Shell Scripting, PowerShell, HTML, CSS, etc. Currently I'm exploring Node.js, CouchDB, MongoDB, and a bunch of little libraries.
+</p>
+
+<p>
+I've written core features for the <a href="http://www.pixelsilk.com/">Pixelsilk</a> CMS as well as many custom projects at <a href="http://www.smartz.com/">Smart Solutions</a>.
+</p>
+
+<p>Other than that I'm into games, comics, anime, cosplay &amp; conventions, cooking, lifting, and apparently I've even taken up gardening lately.</p>
+
 	</div>
 
 	<div class="index">
