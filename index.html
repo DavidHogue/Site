@@ -8,11 +8,9 @@
   <meta name="description" content="David Hogue's Personal Site" />
   <meta name="viewport" content="width=device-width">
   <meta property="fb:admins" content="536952961" />
-  <link rel="openid.server" href="http://www.myopenid.com/server" />
-  <link rel="openid.delegate" href="http://davidhogue.myopenid.com/" />
-  <link rel="openid2.provider" href="http://www.myopenid.com/server" />
-  <link rel="openid2.local_id" href="http://davidhogue.myopenid.com/" />
-  <link href='//fonts.googleapis.com/css?family=Bitter|Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider">
+  <link rel="openid2.local_id" href="https://openid.stackexchange.com/user/da7413cf-7c59-49ea-8026-37e238bfe9c1"> 
+  <link href='//fonts.googleapis.com/css?family=Bitter|Roboto' rel='stylesheet' type='text/css'>
   <link href="/style.css" media="all" type="text/css" rel="stylesheet" />
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <style>
@@ -60,6 +58,16 @@ p+p {
 .fine-print {
 	font-size: 0.8em;
 }
+footer {
+	margin-top: 20em;
+	font-size: 11px;
+	line-height: 12px;
+}
+code {
+	white-space: pre;
+	font-size: 11px;
+	line-height: 12px;
+}
   </style>
 </head>
 
@@ -78,6 +86,9 @@ p+p {
 					<ul id="menu-heaader-menu" class="menu">
 						<li class="menu-item">
 							<a href="/blog/">Blog</a>
+						</li>
+						<li class="menu-item">
+							<a href="/portfolio/">Photography</a>
 						</li>
 						<li class="menu-item">
 							<a href="/">About</a>
@@ -100,16 +111,15 @@ p+p {
 	<div class="about entry-content">
 		<img src="/me/current_profile.jpg" alt="David Hogue" title="David Hogue" />
 <p>
-Hi!  My name is David.  I live in the Portland, Oregon area. 
-I write software for a living. 
+Hi, my name is David. I live in the Portland, Oregon area. I write software for a living. I'm getting more into photography, especially at conventions in the Northwest. 
 </p>
 
 <p>
-I am interested in a variety of programming and tech related topics. Particularly in higher level concepts like design patterns, techniques and security. I like to write solid unit tested code. I keep code simple and refactor when it's worthwhile. I'm always looking out for new and better ways to do things and love to share what i find.
+I like many programming and tech related topics. Especially higher level concepts like design patterns, data processing and security. I like solid unit tested code. I keep code simple and refactor when it's worthwhile. I'm always looking out for new and better ways to do things and love to share what I find.
 </p>
 
 <p>
-I've been using a lot of C#, SQL and JavaScript at work, but I've used most of the major languages such as Java, C, Python, VB.net, Shell Scripting, PowerShell, HTML, CSS, etc. Currently I'm exploring Node.js, CouchDB, MongoDB, and a bunch of little libraries.
+I've been using a lot of C#, SQL and JavaScript at work, but I've used most of the major languages such as Java, C, Python, VB.net, Shell Scripting, PowerShell, HTML, CSS, etc. Currently I'm exploring Node.js, CouchDB, MongoDB, Ember and a bunch of little libraries.
 </p>
 
 <p>
@@ -126,9 +136,9 @@ I've written core features for the <a href="http://www.pixelsilk.com/">Pixelsilk
 		<h2>On this site</h2>
 		<ul>
 			<li><a href="/blog/">My Blog</a></li>
-			<li><a href="/Resume-DavidHogue-2013-public.pdf">My Resume</a></li>
-			<li><a href="http://pics.vorpal.cc/main.php">Some Old Pictures</a></li>
-			<li><a href="/~david/">Misc. Files</a></li>
+			<li><a href="/Resume-DavidHogue-2014-public.pdf">My Resume</a></li>
+			<li><a href="/portfolio/">Photography Portfolio</a></li>
+			<li><a href="/davidhogue.asc">My GPG Key</a></li>
 		</ul>
 
 	    </div>
@@ -136,13 +146,13 @@ I've written core features for the <a href="http://www.pixelsilk.com/">Pixelsilk
 
 		<h2>Other links</h2>
 		<ul>
+			<li><a href="http://www.facebook.com/profile.php?id=536952961">Facebook</a></li>
 			<li><a href="https://twitter.com/DavidHogue">Twitter</a></li>
+			<li><a href="http://www.flickr.com/photos/27138574@N07/">Flickr</a></li>
 			<li><a href="https://github.com/DavidHogue">GitHub</a></li>
 			<li><a href="http://stackoverflow.com/users/32127/david-hogue">Stack Overflow</a></li>
 			<li><a href="http://www.linkedin.com/in/davidhogue">LinkedIn</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=536952961">Facebook</a></li>
 			<li><a rel="me" href="https://plus.google.com/115887719728427721797">Google+</a></li>
-			<li><a href="http://www.flickr.com/photos/27138574@N07/">Flickr</a></li>
 		</ul>
 
 	    </div>
@@ -150,6 +160,30 @@ I've written core features for the <a href="http://www.pixelsilk.com/">Pixelsilk
 
 	<div class="bottomline" />
 
+
+<footer>
+<p>This is only a personal site, but I'd still like it to be as secure as possible. Therefore, here is the SSL fingerprint signed by my private GPG key, just because I can. (It's also signed by DANE with DNSSEC.)</p>
+
+<code style="white-space: pre">
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+SHA-256 Fingerprint=6A:62:1D:B8:00:6A:77:51:FC:25:B6:60:C7:F4:E1:A2:5A:1C:57:83:9D:D1:80:72:F6:6F:DF:52:1D:1F:9D:3D
+Sha1 Fingerprint=18:57:56:B4:4E:62:E2:28:28:58:60:65:CE:58:3C:9C:AF:BB:A8:44
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.22 (MingW32)
+
+iQEcBAEBCgAGBQJT8NBVAAoJEBJVKzqjIroSb6EH/2ePtosiPZ+t5jDHkxBeup8R
+PW9vlifMn2SOqFMGLLpTKVvY0KnUeNrnItVXJjhkhZz6vqi/+JCXQSae1BJ/Jdst
+zQXrp1hT8YlI/+3zkIMhZXmk258Ar67R8k4vPmUAfW9DoCMLBowzIr4m1XzhLB7X
+5fT6swB8EH/9AgcgVygQAwJLosUAKJE3AO5tLaF6eHKAXAMZERK77CiXYMfveq6y
+1ZMc5Velh1/TRnAevkvDvmExLXOG25i2t1QRXnPmX80LwgHbyap4WxmJZgdX+GIJ
+sP7SWrgWPodJNVx9gFhi6522RVC5WeVhCHRaZoFpqgUJuks8VKAWuOPFFIEbR0c=
+=EQXg
+-----END PGP SIGNATURE-----
+</code>
+</footer>
 
 
 	<script type="text/javascript">
@@ -165,4 +199,12 @@ pageTracker._trackPageview();
 </div>
 </div>
 </body>
+
+<!--[if !(lt IE 8)]><!-->
+   <script type="text/javascript">
+     (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+   </script>
+<!--<![endif]-->
+
+
 </html>
